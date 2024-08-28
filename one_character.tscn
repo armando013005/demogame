@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1od0bl7yk277"]
+
+[ext_resource type="Texture2D" uid="uid://3td8ny2ym2hs" path="res://art/onecharacter.png" id="1_4d23r"]
+[ext_resource type="Script" path="res://one_character.gd" id="1_ocfh2"]
+
+[sub_resource type="Animation" id="Animation_nvlk4"]
+resource_name = "walk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_13wvv"]
+_data = {
+"walk": SubResource("Animation_nvlk4")
+}
+
+[node name="OneCharacter" type="Node2D"]
+position = Vector2(2, -2)
+script = ExtResource("1_ocfh2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(-0.5, 0)
+scale = Vector2(0.96875, 1)
+texture = ExtResource("1_4d23r")
+hframes = 5
+
+[node name="Player" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_13wvv")
+}
+autoplay = "walk"

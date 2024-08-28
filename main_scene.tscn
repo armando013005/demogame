@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcdpiv3siqyj4"]
+
+[ext_resource type="Script" path="res://source/player.gd" id="1_btceq"]
+[ext_resource type="PackedScene" uid="uid://b1od0bl7yk277" path="res://one_character.tscn" id="2_xorcf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qx84v"]
+radius = 6.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(127, 69)
+script = ExtResource("1_btceq")
+
+[node name="OneCharacter" parent="." instance=ExtResource("2_xorcf")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_qx84v")
