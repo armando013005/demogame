@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1m004ashdbc5"]
+
+[ext_resource type="PackedScene" uid="uid://cfcqs44uwngo1" path="res://rock.tscn" id="2_p0hu8"]
+[ext_resource type="PackedScene" uid="uid://bcdpiv3siqyj4" path="res://main_scene.tscn" id="2_vde3f"]
+[ext_resource type="PackedScene" uid="uid://1tr2gh86kgsi" path="res://tree.tscn" id="3_6ysgq"]
+
+[node name="game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -718.0
+offset_top = -431.0
+offset_right = 1535.0
+offset_bottom = 888.0
+color = Color(0.93465, 0.999999, 0.935074, 1)
+
+[node name="Player" parent="." instance=ExtResource("2_vde3f")]
+position = Vector2(283, 119)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(2, 7)
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 50.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="Rock" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(121, 181)
+
+[node name="Rock2" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(699, 145)
+
+[node name="Rock3" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(179, 418)
+
+[node name="Rock4" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(698, 350)
+
+[node name="Rock5" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(409, 464)
+
+[node name="Rock6" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(443, 289)
+
+[node name="Tree" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(173, 604)
+
+[node name="Tree2" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(922, 203)
+
+[node name="Tree3" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(981, 194)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1od0bl7yk277"]
+[gd_scene load_steps=6 format=3 uid="uid://b1od0bl7yk277"]
 
 [ext_resource type="Texture2D" uid="uid://3td8ny2ym2hs" path="res://art/onecharacter.png" id="1_4d23r"]
 [ext_resource type="Script" path="res://one_character.gd" id="1_ocfh2"]
+[ext_resource type="Texture2D" uid="uid://qxgd7x14ro10" path="res://art/shadow.png" id="2_61yg4"]
 
 [sub_resource type="Animation" id="Animation_nvlk4"]
 resource_name = "walk"
@@ -27,10 +28,15 @@ _data = {
 position = Vector2(2, -2)
 script = ExtResource("1_ocfh2")
 
+[node name="Shadow" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1, 10)
+scale = Vector2(0.5, 0.62)
+texture = ExtResource("2_61yg4")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 texture_repeat = 1
-position = Vector2(-0.5, 0)
 scale = Vector2(0.96875, 1)
 texture = ExtResource("1_4d23r")
 hframes = 5

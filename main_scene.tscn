@@ -5,13 +5,15 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qx84v"]
 radius = 6.0
+height = 16.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 position = Vector2(127, 69)
 script = ExtResource("1_btceq")
 
 [node name="OneCharacter" parent="." instance=ExtResource("2_xorcf")]
+position = Vector2(1, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 0)
+position = Vector2(1, 8)
 shape = SubResource("CapsuleShape2D_qx84v")
