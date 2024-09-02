@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=3 uid="uid://coc4kc8qcj0ea"]
+
+[ext_resource type="Texture2D" uid="uid://ca8y2ms0oljgv" path="res://art/zombie.png" id="1_3kee8"]
+[ext_resource type="Script" path="res://zero_zombie.gd" id="1_6hxlc"]
+[ext_resource type="Texture2D" uid="uid://qxgd7x14ro10" path="res://art/shadow.png" id="1_gu5s3"]
+
+[sub_resource type="Animation" id="Animation_qd8mt"]
+resource_name = "z_walk"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Zombie:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.466667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 1]
+}
+
+[sub_resource type="Animation" id="Animation_jlgbj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Zombie:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Zombie:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_un8hh"]
+resource_name = "z_hit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Zombie:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.333333, 0.633333, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.992987, 0.73475, 0.716447, 1), Color(0.942552, 0.251015, 0.28107, 1), Color(0.989709, 0.616162, 0.595463, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3e8y3"]
+_data = {
+"RESET": SubResource("Animation_jlgbj"),
+"z_hit": SubResource("Animation_un8hh"),
+"z_walk": SubResource("Animation_qd8mt")
+}
+
+[node name="zeroCharacter" type="Node2D"]
+script = ExtResource("1_6hxlc")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2, 11)
+scale = Vector2(0.633065, 0.74)
+texture = ExtResource("1_gu5s3")
+
+[node name="Zombie" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_3kee8")
+hframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3e8y3")
+}

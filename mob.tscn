@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://g8lu5t6yjg3"]
+
+[ext_resource type="Script" path="res://mob.gd" id="1_jny1p"]
+[ext_resource type="PackedScene" uid="uid://coc4kc8qcj0ea" path="res://zero_zombie.tscn" id="1_y65tk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7qdo7"]
+radius = 13.1529
+
+[node name="mob" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_jny1p")
+
+[node name="zeroCharacter" parent="." instance=ExtResource("1_y65tk")]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_7qdo7")

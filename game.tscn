@@ -1,29 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1m004ashdbc5"]
+[gd_scene load_steps=5 format=3 uid="uid://b1m004ashdbc5"]
 
 [ext_resource type="PackedScene" uid="uid://cfcqs44uwngo1" path="res://rock.tscn" id="2_p0hu8"]
 [ext_resource type="PackedScene" uid="uid://bcdpiv3siqyj4" path="res://main_scene.tscn" id="2_vde3f"]
 [ext_resource type="PackedScene" uid="uid://1tr2gh86kgsi" path="res://tree.tscn" id="3_6ysgq"]
+[ext_resource type="PackedScene" uid="uid://g8lu5t6yjg3" path="res://mob.tscn" id="4_g6b4n"]
 
 [node name="game" type="Node2D"]
 y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -718.0
-offset_top = -431.0
-offset_right = 1535.0
-offset_bottom = 888.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -643.0
+offset_top = -367.0
+offset_right = 1610.0
+offset_bottom = 952.0
 color = Color(0.93465, 0.999999, 0.935074, 1)
 
 [node name="Player" parent="." instance=ExtResource("2_vde3f")]
-position = Vector2(283, 119)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(2, 7)
-zoom = Vector2(1.5, 1.5)
-position_smoothing_enabled = true
-position_smoothing_speed = 50.0
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
+position = Vector2(282, 119)
 
 [node name="Rock" parent="." instance=ExtResource("2_p0hu8")]
 position = Vector2(121, 181)
@@ -40,6 +36,609 @@ position = Vector2(698, 350)
 [node name="Rock5" parent="." instance=ExtResource("2_p0hu8")]
 position = Vector2(409, 464)
 
+[node name="Rock7" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-282, 623)
+
+[node name="Rock8" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-393, -9)
+
+[node name="Rock9" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1047, -197)
+
+[node name="Rock10" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1303, 482)
+
+[node name="Rock11" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1216, 802)
+
+[node name="Rock12" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(715, 886)
+
+[node name="Rock13" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-846, 1400)
+
+[node name="Rock120" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-897, 1357)
+
+[node name="Rock143" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-853, 404)
+
+[node name="Rock144" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-870, 362)
+
+[node name="Rock145" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-856, 321)
+
+[node name="Rock146" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 237)
+
+[node name="Rock147" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 198)
+
+[node name="Rock148" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, 172)
+
+[node name="Rock149" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, 153)
+
+[node name="Rock150" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-822, 132)
+
+[node name="Rock227" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, 124)
+
+[node name="Rock228" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-901, 105)
+
+[node name="Rock229" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-875, 84)
+
+[node name="Rock151" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-855, -18)
+
+[node name="Rock152" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-891, -8)
+
+[node name="Rock153" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-877, -49)
+
+[node name="Rock154" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-894, -91)
+
+[node name="Rock155" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-866, -134)
+
+[node name="Rock156" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-883, -176)
+
+[node name="Rock157" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-869, -217)
+
+[node name="Rock158" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-886, -259)
+
+[node name="Rock159" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-858, -294)
+
+[node name="Rock160" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-875, -336)
+
+[node name="Rock161" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-861, -377)
+
+[node name="Rock162" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-878, -419)
+
+[node name="Rock163" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-850, -462)
+
+[node name="Rock164" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, -504)
+
+[node name="Rock165" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-853, -545)
+
+[node name="Rock166" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-870, -587)
+
+[node name="Rock170" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, 1283)
+
+[node name="Rock171" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, 1189)
+
+[node name="Rock172" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, 1141)
+
+[node name="Rock173" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, 1089)
+
+[node name="Rock174" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1890, 1048)
+
+[node name="Rock175" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, 1006)
+
+[node name="Rock176" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 960)
+
+[node name="Rock177" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 918)
+
+[node name="Rock178" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1877, 877)
+
+[node name="Rock179" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1860, 835)
+
+[node name="Rock180" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 792)
+
+[node name="Rock181" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 750)
+
+[node name="Rock182" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1885, 709)
+
+[node name="Rock183" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1868, 667)
+
+[node name="Rock184" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, 632)
+
+[node name="Rock185" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1879, 590)
+
+[node name="Rock186" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1893, 549)
+
+[node name="Rock187" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, 507)
+
+[node name="Rock188" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1904, 464)
+
+[node name="Rock189" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, 422)
+
+[node name="Rock190" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 381)
+
+[node name="Rock191" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, 339)
+
+[node name="Rock192" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1830, 215)
+
+[node name="Rock193" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1806, 190)
+
+[node name="Rock194" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1858, 162)
+
+[node name="Rock195" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1855, 137)
+
+[node name="Rock196" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 94)
+
+[node name="Rock197" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 67)
+
+[node name="Rock198" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, 26)
+
+[node name="Rock199" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, -16)
+
+[node name="Rock200" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, -51)
+
+[node name="Rock201" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, -93)
+
+[node name="Rock202" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, -149)
+
+[node name="Rock203" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, -191)
+
+[node name="Rock204" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, -234)
+
+[node name="Rock205" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, -276)
+
+[node name="Rock206" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, -317)
+
+[node name="Rock207" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1879, -359)
+
+[node name="Rock208" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1895, -388)
+
+[node name="Rock209" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, -430)
+
+[node name="Rock210" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1906, -473)
+
+[node name="Rock211" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1889, -515)
+
+[node name="Rock212" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1903, -556)
+
+[node name="Rock213" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, -598)
+
+[node name="Rock214" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1895, -658)
+
+[node name="Rock215" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, -700)
+
+[node name="Rock216" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, -741)
+
+[node name="Rock217" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, -783)
+
+[node name="Rock167" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-863, -633)
+
+[node name="Rock168" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-880, -675)
+
+[node name="Rock169" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-866, -716)
+
+[node name="Rock16" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-246, 1380)
+
+[node name="Rock17" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-136, 1379)
+
+[node name="Rock218" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-185, 1390)
+
+[node name="Rock219" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-386, 1393)
+
+[node name="Rock22" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-488, 1404)
+
+[node name="Rock220" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-460, 1392)
+
+[node name="Rock23" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-324, 1383)
+
+[node name="Rock24" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-624, 1400)
+
+[node name="Rock25" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-553, 1399)
+
+[node name="Rock26" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-771, 1404)
+
+[node name="Rock27" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-697, 1393)
+
+[node name="Rock28" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(677, 1355)
+
+[node name="Rock29" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(499, 1362)
+
+[node name="Rock30" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(599, 1358)
+
+[node name="Rock31" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(314, 1369)
+
+[node name="Rock32" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(414, 1365)
+
+[node name="Rock33" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(136, 1376)
+
+[node name="Rock34" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(236, 1372)
+
+[node name="Rock35" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(677, 1355)
+
+[node name="Rock36" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(549, 1363)
+
+[node name="Rock37" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(643, 1362)
+
+[node name="Rock38" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(373, 1372)
+
+[node name="Rock39" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(414, 1365)
+
+[node name="Rock40" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(136, 1376)
+
+[node name="Rock41" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(193, 1378)
+
+[node name="Rock42" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1308, 1330)
+
+[node name="Rock43" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1130, 1337)
+
+[node name="Rock44" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1230, 1333)
+
+[node name="Rock45" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(945, 1344)
+
+[node name="Rock46" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1023, 1346)
+
+[node name="Rock47" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(749, 1356)
+
+[node name="Rock48" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(867, 1347)
+
+[node name="Rock49" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1345, 1346)
+
+[node name="Rock50" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1160, 1345)
+
+[node name="Rock51" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1274, 1343)
+
+[node name="Rock52" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(945, 1344)
+
+[node name="Rock53" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1070, 1353)
+
+[node name="Rock54" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(818, 1354)
+
+[node name="Rock55" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(941, 1357)
+
+[node name="Rock56" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, 1312)
+
+[node name="Rock57" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1668, 1319)
+
+[node name="Rock58" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1768, 1315)
+
+[node name="Rock59" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1483, 1326)
+
+[node name="Rock60" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1583, 1322)
+
+[node name="Rock61" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1405, 1329)
+
+[node name="Rock62" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1860, 1269)
+
+[node name="Rock63" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1668, 1319)
+
+[node name="Rock64" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1725, 1324)
+
+[node name="Rock65" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1539, 1334)
+
+[node name="Rock66" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1645, 1333)
+
+[node name="Rock67" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1459, 1341)
+
+[node name="Rock18" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-71, 1380)
+
+[node name="Rock19" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(73, 1379)
+
+[node name="Rock20" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-71, 1380)
+
+[node name="Rock21" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(0, 1381)
+
+[node name="Rock68" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-255, -730)
+
+[node name="Rock221" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-296, -739)
+
+[node name="Rock222" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-315, -723)
+
+[node name="Rock223" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-352, -737)
+
+[node name="Rock224" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-380, -716)
+
+[node name="Rock225" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-423, -733)
+
+[node name="Rock226" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-436, -719)
+
+[node name="Rock69" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-189, -739)
+
+[node name="Rock70" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-561, -722)
+
+[node name="Rock71" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-489, -716)
+
+[node name="Rock72" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-698, -724)
+
+[node name="Rock73" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-627, -718)
+
+[node name="Rock74" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, -716)
+
+[node name="Rock75" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-746, -717)
+
+[node name="Rock76" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(629, -759)
+
+[node name="Rock77" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(451, -752)
+
+[node name="Rock78" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(551, -756)
+
+[node name="Rock79" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(266, -745)
+
+[node name="Rock80" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(366, -749)
+
+[node name="Rock81" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(88, -738)
+
+[node name="Rock82" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(188, -742)
+
+[node name="Rock83" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(594, -771)
+
+[node name="Rock84" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(418, -762)
+
+[node name="Rock85" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(514, -743)
+
+[node name="Rock86" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(230, -753)
+
+[node name="Rock87" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(322, -737)
+
+[node name="Rock88" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(40, -746)
+
+[node name="Rock89" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(157, -731)
+
+[node name="Rock90" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1260, -784)
+
+[node name="Rock91" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1082, -777)
+
+[node name="Rock92" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1182, -781)
+
+[node name="Rock93" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(897, -770)
+
+[node name="Rock94" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(997, -774)
+
+[node name="Rock95" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(719, -763)
+
+[node name="Rock96" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(819, -767)
+
+[node name="Rock97" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1233, -772)
+
+[node name="Rock98" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1039, -764)
+
+[node name="Rock99" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1140, -792)
+
+[node name="Rock100" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(862, -757)
+
+[node name="Rock101" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(958, -783)
+
+[node name="Rock102" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(684, -748)
+
+[node name="Rock103" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(771, -779)
+
+[node name="Rock104" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1798, -802)
+
+[node name="Rock105" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1620, -795)
+
+[node name="Rock106" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1720, -799)
+
+[node name="Rock107" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1435, -788)
+
+[node name="Rock108" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1535, -792)
+
+[node name="Rock109" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1357, -785)
+
+[node name="Rock110" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1835, -789)
+
+[node name="Rock111" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1585, -787)
+
+[node name="Rock112" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1666, -810)
+
+[node name="Rock113" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1403, -775)
+
+[node name="Rock114" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1487, -797)
+
+[node name="Rock115" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1317, -796)
+
+[node name="Rock116" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-119, -734)
+
+[node name="Rock117" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-19, -738)
+
+[node name="Rock118" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-146, -746)
+
+[node name="Rock119" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-58, -725)
+
+[node name="Rock14" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1401, -93)
+
+[node name="Rock15" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(224, -187)
+
 [node name="Rock6" parent="." instance=ExtResource("2_p0hu8")]
 position = Vector2(443, 289)
 
@@ -47,7 +646,2804 @@ position = Vector2(443, 289)
 position = Vector2(173, 604)
 
 [node name="Tree2" parent="." instance=ExtResource("3_6ysgq")]
-position = Vector2(922, 203)
+position = Vector2(893, 109)
+
+[node name="Tree4" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(651, -103)
+
+[node name="Tree5" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-129, 223)
+
+[node name="Tree8" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-828, 100)
+
+[node name="Tree11" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-794, 184)
+
+[node name="Tree12" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-799, 231)
+
+[node name="Rock230" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 412)
+
+[node name="Rock231" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 373)
+
+[node name="Rock232" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-762, 347)
+
+[node name="Rock233" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-796, 328)
+
+[node name="Rock234" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-770, 307)
+
+[node name="Rock235" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-815, 299)
+
+[node name="Rock236" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-849, 280)
+
+[node name="Rock237" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-823, 259)
+
+[node name="Tree13" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-776, 275)
+
+[node name="Tree14" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-742, 359)
+
+[node name="Tree15" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-747, 406)
+
+[node name="Rock238" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-850, 704)
+
+[node name="Rock239" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, 662)
+
+[node name="Rock240" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-853, 621)
+
+[node name="Rock241" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, 537)
+
+[node name="Rock242" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, 498)
+
+[node name="Rock243" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-811, 472)
+
+[node name="Rock244" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-845, 453)
+
+[node name="Rock245" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-819, 432)
+
+[node name="Rock246" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-864, 424)
+
+[node name="Rock247" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-898, 405)
+
+[node name="Rock248" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-872, 384)
+
+[node name="Tree16" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-825, 400)
+
+[node name="Tree17" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-791, 484)
+
+[node name="Rock308" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-868, 20)
+
+[node name="Rock309" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-885, -22)
+
+[node name="Rock310" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-871, -63)
+
+[node name="Rock311" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, -147)
+
+[node name="Rock312" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, -186)
+
+[node name="Rock313" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-829, -212)
+
+[node name="Rock314" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-863, -231)
+
+[node name="Rock315" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-837, -252)
+
+[node name="Rock316" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-882, -260)
+
+[node name="Rock317" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-916, -279)
+
+[node name="Rock318" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-890, -300)
+
+[node name="Tree37" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-843, -284)
+
+[node name="Tree38" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-809, -200)
+
+[node name="Tree39" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-814, -153)
+
+[node name="Rock319" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-796, 28)
+
+[node name="Rock320" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-796, -11)
+
+[node name="Rock321" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-777, -37)
+
+[node name="Rock322" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-811, -56)
+
+[node name="Rock323" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-785, -77)
+
+[node name="Rock324" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, -85)
+
+[node name="Rock325" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-864, -104)
+
+[node name="Rock326" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-838, -125)
+
+[node name="Tree40" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-791, -109)
+
+[node name="Tree41" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-757, -25)
+
+[node name="Tree42" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-762, 22)
+
+[node name="Rock327" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-845, 114)
+
+[node name="Rock328" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, 88)
+
+[node name="Rock329" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-860, 69)
+
+[node name="Rock330" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-834, 48)
+
+[node name="Rock331" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-879, 40)
+
+[node name="Rock332" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-913, 21)
+
+[node name="Rock333" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-887, 0)
+
+[node name="Tree43" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-840, 16)
+
+[node name="Tree44" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-806, 100)
+
+[node name="Rock334" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-856, -373)
+
+[node name="Rock335" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-873, -415)
+
+[node name="Rock336" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-859, -456)
+
+[node name="Rock337" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-836, -540)
+
+[node name="Rock338" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-836, -579)
+
+[node name="Rock339" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-817, -605)
+
+[node name="Rock340" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-851, -624)
+
+[node name="Rock341" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, -645)
+
+[node name="Rock342" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-870, -653)
+
+[node name="Rock343" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-904, -672)
+
+[node name="Rock344" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-878, -693)
+
+[node name="Tree45" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-831, -677)
+
+[node name="Tree46" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-797, -593)
+
+[node name="Tree47" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-802, -546)
+
+[node name="Rock345" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-784, -365)
+
+[node name="Rock346" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-784, -404)
+
+[node name="Rock347" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-765, -430)
+
+[node name="Rock348" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-799, -449)
+
+[node name="Rock349" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, -470)
+
+[node name="Rock350" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-818, -478)
+
+[node name="Rock351" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-852, -497)
+
+[node name="Rock352" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, -518)
+
+[node name="Tree48" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-779, -502)
+
+[node name="Tree49" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-745, -418)
+
+[node name="Tree50" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-750, -371)
+
+[node name="Rock353" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, -279)
+
+[node name="Rock354" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, -305)
+
+[node name="Rock355" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, -324)
+
+[node name="Rock356" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-822, -345)
+
+[node name="Rock357" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, -353)
+
+[node name="Rock358" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-901, -372)
+
+[node name="Rock359" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-875, -393)
+
+[node name="Tree51" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-828, -377)
+
+[node name="Tree52" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-794, -293)
+
+[node name="Tree18" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-796, 531)
+
+[node name="Rock249" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-778, 712)
+
+[node name="Rock250" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-778, 673)
+
+[node name="Rock251" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-759, 647)
+
+[node name="Rock252" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-793, 628)
+
+[node name="Rock253" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-767, 607)
+
+[node name="Rock254" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-812, 599)
+
+[node name="Rock255" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-846, 580)
+
+[node name="Rock256" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-820, 559)
+
+[node name="Tree19" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-773, 575)
+
+[node name="Tree20" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-739, 659)
+
+[node name="Tree21" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-744, 706)
+
+[node name="Rock257" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-811, 991)
+
+[node name="Rock258" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-828, 949)
+
+[node name="Rock259" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, 908)
+
+[node name="Rock260" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-791, 824)
+
+[node name="Rock261" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-791, 785)
+
+[node name="Rock262" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-772, 759)
+
+[node name="Rock263" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-806, 740)
+
+[node name="Rock264" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-780, 719)
+
+[node name="Rock265" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, 711)
+
+[node name="Tree22" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-752, 771)
+
+[node name="Tree23" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-757, 818)
+
+[node name="Rock266" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-739, 999)
+
+[node name="Rock267" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-739, 960)
+
+[node name="Rock268" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-720, 934)
+
+[node name="Rock269" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-754, 915)
+
+[node name="Rock270" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-728, 894)
+
+[node name="Rock271" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, 886)
+
+[node name="Rock272" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-807, 867)
+
+[node name="Rock273" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 846)
+
+[node name="Tree24" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-734, 862)
+
+[node name="Tree25" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-700, 946)
+
+[node name="Tree26" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-705, 993)
+
+[node name="Rock274" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-864, 1389)
+
+[node name="Rock275" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-881, 1347)
+
+[node name="Rock276" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, 1306)
+
+[node name="Rock277" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-844, 1222)
+
+[node name="Rock278" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-844, 1183)
+
+[node name="Rock279" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, 1157)
+
+[node name="Rock280" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-859, 1138)
+
+[node name="Rock281" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 1117)
+
+[node name="Rock282" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-878, 1109)
+
+[node name="Tree27" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-805, 1169)
+
+[node name="Tree28" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-810, 1216)
+
+[node name="Rock283" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-792, 1397)
+
+[node name="Rock284" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-792, 1358)
+
+[node name="Rock285" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, 1332)
+
+[node name="Rock286" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-807, 1313)
+
+[node name="Rock287" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 1292)
+
+[node name="Rock288" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, 1284)
+
+[node name="Rock289" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-860, 1265)
+
+[node name="Rock290" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-834, 1244)
+
+[node name="Tree29" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-787, 1260)
+
+[node name="Tree30" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-753, 1344)
+
+[node name="Tree31" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-758, 1391)
+
+[node name="Rock291" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, 1177)
+
+[node name="Rock292" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-847, 1135)
+
+[node name="Rock293" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 1094)
+
+[node name="Rock294" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-810, 1010)
+
+[node name="Rock295" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-810, 971)
+
+[node name="Rock296" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-791, 945)
+
+[node name="Rock297" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, 926)
+
+[node name="Rock298" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-799, 905)
+
+[node name="Rock299" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-844, 897)
+
+[node name="Tree32" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-771, 957)
+
+[node name="Tree33" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-776, 1004)
+
+[node name="Rock300" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-758, 1185)
+
+[node name="Rock301" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-758, 1146)
+
+[node name="Rock302" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-739, 1120)
+
+[node name="Rock303" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, 1101)
+
+[node name="Rock304" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-747, 1080)
+
+[node name="Rock305" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-792, 1072)
+
+[node name="Rock306" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, 1053)
+
+[node name="Rock307" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-800, 1032)
+
+[node name="Tree34" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-753, 1048)
+
+[node name="Tree35" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-719, 1132)
+
+[node name="Tree36" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-724, 1179)
+
+[node name="Rock121" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-897, 1357)
+
+[node name="Rock360" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-853, 404)
+
+[node name="Rock361" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-870, 362)
+
+[node name="Rock362" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-856, 321)
+
+[node name="Rock363" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 237)
+
+[node name="Rock364" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 198)
+
+[node name="Rock365" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, 172)
+
+[node name="Rock366" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, 153)
+
+[node name="Rock367" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-822, 132)
+
+[node name="Rock368" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, 124)
+
+[node name="Rock369" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-901, 105)
+
+[node name="Rock370" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-875, 84)
+
+[node name="Rock371" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-855, -18)
+
+[node name="Rock372" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-891, -8)
+
+[node name="Rock373" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-877, -49)
+
+[node name="Rock374" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-894, -91)
+
+[node name="Rock375" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-866, -134)
+
+[node name="Rock376" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-883, -176)
+
+[node name="Rock377" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-869, -217)
+
+[node name="Rock378" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-886, -259)
+
+[node name="Rock379" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-858, -294)
+
+[node name="Rock380" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-875, -336)
+
+[node name="Rock381" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-861, -377)
+
+[node name="Rock382" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-878, -419)
+
+[node name="Rock383" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-850, -462)
+
+[node name="Rock384" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, -504)
+
+[node name="Rock385" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-853, -545)
+
+[node name="Rock386" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-870, -587)
+
+[node name="Rock387" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-863, -633)
+
+[node name="Rock388" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-880, -675)
+
+[node name="Rock389" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-866, -716)
+
+[node name="Rock122" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-698, -724)
+
+[node name="Rock123" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, -716)
+
+[node name="Rock124" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-746, -717)
+
+[node name="Tree53" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-828, 100)
+
+[node name="Tree54" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-794, 184)
+
+[node name="Tree55" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-799, 231)
+
+[node name="Rock390" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 412)
+
+[node name="Rock391" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 373)
+
+[node name="Rock392" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-762, 347)
+
+[node name="Rock393" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-796, 328)
+
+[node name="Rock394" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-770, 307)
+
+[node name="Rock395" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-815, 299)
+
+[node name="Rock396" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-849, 280)
+
+[node name="Rock397" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-823, 259)
+
+[node name="Tree56" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-776, 275)
+
+[node name="Tree57" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-742, 359)
+
+[node name="Tree58" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-747, 406)
+
+[node name="Rock398" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-850, 704)
+
+[node name="Rock399" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, 662)
+
+[node name="Rock400" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-853, 621)
+
+[node name="Rock401" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, 537)
+
+[node name="Rock402" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, 498)
+
+[node name="Rock403" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-811, 472)
+
+[node name="Rock404" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-845, 453)
+
+[node name="Rock405" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-819, 432)
+
+[node name="Rock406" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-864, 424)
+
+[node name="Rock407" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-898, 405)
+
+[node name="Rock408" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-872, 384)
+
+[node name="Tree59" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-825, 400)
+
+[node name="Tree60" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-791, 484)
+
+[node name="Rock409" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-868, 20)
+
+[node name="Rock410" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-885, -22)
+
+[node name="Rock411" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-871, -63)
+
+[node name="Rock412" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, -147)
+
+[node name="Rock413" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, -186)
+
+[node name="Rock414" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-829, -212)
+
+[node name="Rock415" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-863, -231)
+
+[node name="Rock416" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-837, -252)
+
+[node name="Rock417" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-882, -260)
+
+[node name="Rock418" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-916, -279)
+
+[node name="Rock419" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-890, -300)
+
+[node name="Tree61" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-843, -284)
+
+[node name="Tree62" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-809, -200)
+
+[node name="Tree63" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-814, -153)
+
+[node name="Rock420" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-796, 28)
+
+[node name="Rock421" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-796, -11)
+
+[node name="Rock422" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-777, -37)
+
+[node name="Rock423" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-811, -56)
+
+[node name="Rock424" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-785, -77)
+
+[node name="Rock425" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, -85)
+
+[node name="Rock426" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-864, -104)
+
+[node name="Rock427" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-838, -125)
+
+[node name="Tree64" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-791, -109)
+
+[node name="Tree65" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-757, -25)
+
+[node name="Tree66" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-762, 22)
+
+[node name="Rock428" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-845, 114)
+
+[node name="Rock429" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, 88)
+
+[node name="Rock430" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-860, 69)
+
+[node name="Rock431" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-834, 48)
+
+[node name="Rock432" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-879, 40)
+
+[node name="Rock433" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-913, 21)
+
+[node name="Rock434" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-887, 0)
+
+[node name="Tree67" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-840, 16)
+
+[node name="Tree68" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-806, 100)
+
+[node name="Rock435" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-856, -373)
+
+[node name="Rock436" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-873, -415)
+
+[node name="Rock437" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-859, -456)
+
+[node name="Rock438" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-836, -540)
+
+[node name="Rock439" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-836, -579)
+
+[node name="Rock440" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-817, -605)
+
+[node name="Rock441" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-851, -624)
+
+[node name="Rock442" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, -645)
+
+[node name="Rock443" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-870, -653)
+
+[node name="Rock444" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-904, -672)
+
+[node name="Rock445" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-878, -693)
+
+[node name="Tree69" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-831, -677)
+
+[node name="Tree70" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-797, -593)
+
+[node name="Tree71" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-802, -546)
+
+[node name="Rock446" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-784, -365)
+
+[node name="Rock447" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-784, -404)
+
+[node name="Rock448" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-765, -430)
+
+[node name="Rock449" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-799, -449)
+
+[node name="Rock450" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, -470)
+
+[node name="Rock451" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-818, -478)
+
+[node name="Rock452" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-852, -497)
+
+[node name="Rock453" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, -518)
+
+[node name="Tree72" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-779, -502)
+
+[node name="Tree73" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-745, -418)
+
+[node name="Tree74" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-750, -371)
+
+[node name="Rock454" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, -279)
+
+[node name="Rock455" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, -305)
+
+[node name="Rock456" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-848, -324)
+
+[node name="Rock457" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-822, -345)
+
+[node name="Rock458" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, -353)
+
+[node name="Rock459" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-901, -372)
+
+[node name="Rock460" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-875, -393)
+
+[node name="Tree75" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-828, -377)
+
+[node name="Tree76" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-794, -293)
+
+[node name="Tree77" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-796, 531)
+
+[node name="Rock461" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-778, 712)
+
+[node name="Rock462" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-778, 673)
+
+[node name="Rock463" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-759, 647)
+
+[node name="Rock464" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-793, 628)
+
+[node name="Rock465" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-767, 607)
+
+[node name="Rock466" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-812, 599)
+
+[node name="Rock467" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-846, 580)
+
+[node name="Rock468" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-820, 559)
+
+[node name="Tree78" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-773, 575)
+
+[node name="Tree79" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-739, 659)
+
+[node name="Tree80" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-744, 706)
+
+[node name="Rock469" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-811, 991)
+
+[node name="Rock470" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-828, 949)
+
+[node name="Rock471" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-814, 908)
+
+[node name="Rock472" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-791, 824)
+
+[node name="Rock473" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-791, 785)
+
+[node name="Rock474" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-772, 759)
+
+[node name="Rock475" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-806, 740)
+
+[node name="Rock476" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-780, 719)
+
+[node name="Rock477" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, 711)
+
+[node name="Tree81" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-752, 771)
+
+[node name="Tree82" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-757, 818)
+
+[node name="Rock478" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-739, 999)
+
+[node name="Rock479" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-739, 960)
+
+[node name="Rock480" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-720, 934)
+
+[node name="Rock481" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-754, 915)
+
+[node name="Rock482" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-728, 894)
+
+[node name="Rock483" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, 886)
+
+[node name="Rock484" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-807, 867)
+
+[node name="Rock485" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 846)
+
+[node name="Tree83" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-734, 862)
+
+[node name="Tree84" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-700, 946)
+
+[node name="Tree85" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-705, 993)
+
+[node name="Rock486" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-864, 1389)
+
+[node name="Rock487" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-881, 1347)
+
+[node name="Rock488" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-867, 1306)
+
+[node name="Rock489" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-844, 1222)
+
+[node name="Rock490" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-844, 1183)
+
+[node name="Rock491" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, 1157)
+
+[node name="Rock492" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-859, 1138)
+
+[node name="Rock493" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 1117)
+
+[node name="Rock494" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-878, 1109)
+
+[node name="Tree86" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-805, 1169)
+
+[node name="Tree87" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-810, 1216)
+
+[node name="Rock495" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-792, 1358)
+
+[node name="Rock496" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, 1332)
+
+[node name="Rock497" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-807, 1313)
+
+[node name="Rock498" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-781, 1292)
+
+[node name="Rock499" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, 1284)
+
+[node name="Rock500" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-860, 1265)
+
+[node name="Rock501" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-834, 1244)
+
+[node name="Tree88" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-787, 1260)
+
+[node name="Tree89" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-753, 1344)
+
+[node name="Rock502" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-830, 1177)
+
+[node name="Rock503" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-847, 1135)
+
+[node name="Rock504" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-833, 1094)
+
+[node name="Rock505" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-810, 1010)
+
+[node name="Rock506" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-810, 971)
+
+[node name="Rock507" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-791, 945)
+
+[node name="Rock508" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-825, 926)
+
+[node name="Rock509" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-799, 905)
+
+[node name="Rock510" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-844, 897)
+
+[node name="Tree90" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-771, 957)
+
+[node name="Tree91" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-776, 1004)
+
+[node name="Rock511" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-758, 1185)
+
+[node name="Rock512" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-758, 1146)
+
+[node name="Rock513" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-739, 1120)
+
+[node name="Rock514" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-773, 1101)
+
+[node name="Rock515" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-747, 1080)
+
+[node name="Rock516" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-792, 1072)
+
+[node name="Rock517" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-826, 1053)
+
+[node name="Rock518" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(-800, 1032)
+
+[node name="Tree92" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-753, 1048)
+
+[node name="Tree93" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-719, 1132)
+
+[node name="Tree94" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-724, 1179)
+
+[node name="Tree6" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-68, 623)
+
+[node name="Tree7" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(-71, 848)
+
+[node name="Tree9" parent="." instance=ExtResource("3_6ysgq")]
+
+[node name="Tree10" parent="." instance=ExtResource("3_6ysgq")]
 
 [node name="Tree3" parent="." instance=ExtResource("3_6ysgq")]
-position = Vector2(981, 194)
+position = Vector2(1851, 204)
+
+[node name="Tree95" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1821, 146)
+
+[node name="Rock519" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, 113)
+
+[node name="Rock520" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1822, 88)
+
+[node name="Rock521" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 75)
+
+[node name="Rock522" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1877, 50)
+
+[node name="Rock523" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1905, 7)
+
+[node name="Tree96" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1867, 102)
+
+[node name="Tree97" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1843, 59)
+
+[node name="Rock524" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1866, 96)
+
+[node name="Rock525" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1848, 86)
+
+[node name="Rock526" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, 58)
+
+[node name="Rock527" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 33)
+
+[node name="Rock528" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1925, -10)
+
+[node name="Rock529" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, -52)
+
+[node name="Rock530" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1922, -93)
+
+[node name="Tree98" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1887, 85)
+
+[node name="Tree99" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1863, 42)
+
+[node name="Rock531" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 9)
+
+[node name="Rock532" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, -16)
+
+[node name="Rock533" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1916, -44)
+
+[node name="Rock534" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1913, -69)
+
+[node name="Tree100" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1909, -2)
+
+[node name="Tree101" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1879, -60)
+
+[node name="Rock535" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1866, 96)
+
+[node name="Rock536" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1848, 86)
+
+[node name="Rock537" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, 58)
+
+[node name="Rock538" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 33)
+
+[node name="Rock539" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1925, -10)
+
+[node name="Rock540" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, -52)
+
+[node name="Rock541" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1922, -93)
+
+[node name="Tree102" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1887, 85)
+
+[node name="Tree103" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1863, 42)
+
+[node name="Rock542" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 9)
+
+[node name="Rock543" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, -16)
+
+[node name="Rock544" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1916, -44)
+
+[node name="Rock545" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1913, -69)
+
+[node name="Tree104" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1909, -2)
+
+[node name="Tree105" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1879, -60)
+
+[node name="Rock546" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, -73)
+
+[node name="Rock547" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, -114)
+
+[node name="Rock548" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, -156)
+
+[node name="Rock549" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, -191)
+
+[node name="Rock550" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, -233)
+
+[node name="Rock551" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, -65)
+
+[node name="Rock552" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1877, -90)
+
+[node name="Rock553" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1905, -133)
+
+[node name="Tree106" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1843, -81)
+
+[node name="Rock554" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1848, -54)
+
+[node name="Rock555" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, -82)
+
+[node name="Rock556" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, -107)
+
+[node name="Rock557" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1925, -150)
+
+[node name="Rock558" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, -192)
+
+[node name="Rock559" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1922, -233)
+
+[node name="Tree107" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1863, -98)
+
+[node name="Rock560" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, -131)
+
+[node name="Rock561" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, -156)
+
+[node name="Rock562" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1916, -184)
+
+[node name="Rock563" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1913, -209)
+
+[node name="Tree108" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1909, -142)
+
+[node name="Tree109" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1879, -200)
+
+[node name="Rock564" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1848, -54)
+
+[node name="Rock565" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, -82)
+
+[node name="Rock566" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, -107)
+
+[node name="Rock567" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1925, -150)
+
+[node name="Rock568" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, -192)
+
+[node name="Rock569" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1922, -233)
+
+[node name="Tree110" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1863, -98)
+
+[node name="Rock570" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, -131)
+
+[node name="Rock571" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, -156)
+
+[node name="Rock572" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1916, -184)
+
+[node name="Rock573" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1913, -209)
+
+[node name="Tree111" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1909, -142)
+
+[node name="Tree112" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1879, -200)
+
+[node name="Rock574" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, -213)
+
+[node name="Rock575" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1890, -254)
+
+[node name="Rock576" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, -296)
+
+[node name="Rock577" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, -331)
+
+[node name="Rock578" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, -373)
+
+[node name="Rock579" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, -205)
+
+[node name="Rock580" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1881, -230)
+
+[node name="Rock581" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1909, -273)
+
+[node name="Tree113" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1847, -221)
+
+[node name="Rock582" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1852, -194)
+
+[node name="Rock583" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1904, -222)
+
+[node name="Rock584" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, -247)
+
+[node name="Rock585" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1929, -290)
+
+[node name="Rock586" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1912, -332)
+
+[node name="Rock587" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1926, -373)
+
+[node name="Tree114" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1867, -238)
+
+[node name="Rock588" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, -271)
+
+[node name="Rock589" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1868, -296)
+
+[node name="Rock590" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1920, -324)
+
+[node name="Rock591" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1917, -349)
+
+[node name="Tree115" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1913, -282)
+
+[node name="Tree116" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1883, -340)
+
+[node name="Rock592" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1852, -194)
+
+[node name="Rock593" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1904, -222)
+
+[node name="Rock594" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, -247)
+
+[node name="Rock595" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1929, -290)
+
+[node name="Rock596" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1912, -332)
+
+[node name="Rock597" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1926, -373)
+
+[node name="Tree117" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1867, -238)
+
+[node name="Rock598" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, -271)
+
+[node name="Rock599" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1868, -296)
+
+[node name="Rock600" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1920, -324)
+
+[node name="Rock601" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1917, -349)
+
+[node name="Tree118" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1913, -282)
+
+[node name="Tree119" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1883, -340)
+
+[node name="Rock602" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, -399)
+
+[node name="Rock603" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1860, -440)
+
+[node name="Rock604" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1843, -482)
+
+[node name="Rock605" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, -517)
+
+[node name="Rock606" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, -559)
+
+[node name="Rock607" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, -391)
+
+[node name="Rock608" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1851, -416)
+
+[node name="Rock609" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1879, -459)
+
+[node name="Tree120" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1817, -407)
+
+[node name="Rock610" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1822, -380)
+
+[node name="Rock611" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, -408)
+
+[node name="Rock612" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, -433)
+
+[node name="Rock613" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, -476)
+
+[node name="Rock614" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, -518)
+
+[node name="Rock615" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, -559)
+
+[node name="Tree121" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1837, -424)
+
+[node name="Rock616" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1862, -457)
+
+[node name="Rock617" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1838, -482)
+
+[node name="Rock618" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1890, -510)
+
+[node name="Rock619" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, -535)
+
+[node name="Tree122" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1883, -468)
+
+[node name="Tree123" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1853, -526)
+
+[node name="Rock620" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1822, -380)
+
+[node name="Rock621" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, -408)
+
+[node name="Rock622" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, -433)
+
+[node name="Rock623" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, -476)
+
+[node name="Rock624" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, -518)
+
+[node name="Rock625" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, -559)
+
+[node name="Tree124" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1837, -424)
+
+[node name="Rock626" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1862, -457)
+
+[node name="Rock627" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1838, -482)
+
+[node name="Rock628" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1890, -510)
+
+[node name="Rock629" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, -535)
+
+[node name="Tree125" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1883, -468)
+
+[node name="Tree126" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1853, -526)
+
+[node name="Rock630" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1842, -588)
+
+[node name="Rock631" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1856, -629)
+
+[node name="Rock632" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, -671)
+
+[node name="Rock633" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, -706)
+
+[node name="Rock634" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1850, -748)
+
+[node name="Rock635" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1850, -580)
+
+[node name="Rock636" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, -605)
+
+[node name="Rock637" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, -648)
+
+[node name="Tree127" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1813, -596)
+
+[node name="Rock638" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1818, -569)
+
+[node name="Rock639" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1870, -597)
+
+[node name="Rock640" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, -622)
+
+[node name="Rock641" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1895, -665)
+
+[node name="Rock642" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, -707)
+
+[node name="Rock643" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, -748)
+
+[node name="Tree128" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1833, -613)
+
+[node name="Rock644" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1858, -646)
+
+[node name="Rock645" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1834, -671)
+
+[node name="Rock646" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, -699)
+
+[node name="Rock647" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, -724)
+
+[node name="Tree129" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1879, -657)
+
+[node name="Tree130" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1849, -715)
+
+[node name="Rock648" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1818, -569)
+
+[node name="Rock658" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1861, 681)
+
+[node name="Rock659" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1844, 639)
+
+[node name="Rock660" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 604)
+
+[node name="Rock661" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1855, 562)
+
+[node name="Rock662" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 506)
+
+[node name="Rock663" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, 464)
+
+[node name="Rock664" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, 421)
+
+[node name="Rock665" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1857, 379)
+
+[node name="Rock666" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 338)
+
+[node name="Rock667" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, 296)
+
+[node name="Rock668" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1870, 267)
+
+[node name="Rock669" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1853, 225)
+
+[node name="Rock670" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1881, 182)
+
+[node name="Rock671" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, 140)
+
+[node name="Rock672" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, 99)
+
+[node name="Rock673" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 662)
+
+[node name="Rock674" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 688)
+
+[node name="Rock675" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, 645)
+
+[node name="Rock676" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 603)
+
+[node name="Rock677" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 562)
+
+[node name="Tree134" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1838, 697)
+
+[node name="Rock678" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 664)
+
+[node name="Rock679" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, 639)
+
+[node name="Rock680" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 611)
+
+[node name="Rock681" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 586)
+
+[node name="Tree135" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1884, 653)
+
+[node name="Tree136" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1854, 595)
+
+[node name="Rock682" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 688)
+
+[node name="Rock683" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, 645)
+
+[node name="Rock684" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 603)
+
+[node name="Rock685" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 562)
+
+[node name="Tree137" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1838, 697)
+
+[node name="Rock686" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 664)
+
+[node name="Rock687" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, 639)
+
+[node name="Rock688" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 611)
+
+[node name="Rock689" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 586)
+
+[node name="Tree138" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1884, 653)
+
+[node name="Tree139" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1854, 595)
+
+[node name="Rock690" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 582)
+
+[node name="Rock691" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1861, 541)
+
+[node name="Rock692" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1844, 499)
+
+[node name="Rock693" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 464)
+
+[node name="Rock694" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1855, 422)
+
+[node name="Rock695" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1855, 590)
+
+[node name="Rock696" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1852, 565)
+
+[node name="Rock697" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 522)
+
+[node name="Tree140" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1818, 574)
+
+[node name="Rock698" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1823, 601)
+
+[node name="Rock699" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, 573)
+
+[node name="Rock700" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 548)
+
+[node name="Rock701" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, 505)
+
+[node name="Rock702" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 463)
+
+[node name="Rock703" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 422)
+
+[node name="Tree141" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1838, 557)
+
+[node name="Rock704" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 524)
+
+[node name="Rock705" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, 499)
+
+[node name="Rock706" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 471)
+
+[node name="Rock707" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 446)
+
+[node name="Tree142" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1884, 513)
+
+[node name="Tree143" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1854, 455)
+
+[node name="Rock708" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1823, 601)
+
+[node name="Rock709" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, 573)
+
+[node name="Rock710" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 548)
+
+[node name="Rock711" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1900, 505)
+
+[node name="Rock712" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 463)
+
+[node name="Rock713" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 422)
+
+[node name="Tree144" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1838, 557)
+
+[node name="Rock714" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 524)
+
+[node name="Rock715" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, 499)
+
+[node name="Rock716" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 471)
+
+[node name="Rock717" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 446)
+
+[node name="Tree145" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1884, 513)
+
+[node name="Tree146" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1854, 455)
+
+[node name="Rock718" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1851, 442)
+
+[node name="Rock719" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1865, 401)
+
+[node name="Rock720" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1848, 359)
+
+[node name="Rock721" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, 324)
+
+[node name="Rock722" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1859, 282)
+
+[node name="Rock723" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1859, 450)
+
+[node name="Rock724" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1856, 425)
+
+[node name="Rock725" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, 382)
+
+[node name="Tree147" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1822, 434)
+
+[node name="Rock726" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1827, 461)
+
+[node name="Rock727" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1879, 433)
+
+[node name="Rock728" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, 408)
+
+[node name="Rock729" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1904, 365)
+
+[node name="Rock730" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, 323)
+
+[node name="Rock731" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 282)
+
+[node name="Tree148" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1842, 417)
+
+[node name="Rock732" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 384)
+
+[node name="Rock733" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1843, 359)
+
+[node name="Rock734" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1895, 331)
+
+[node name="Rock735" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, 306)
+
+[node name="Tree149" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1888, 373)
+
+[node name="Tree150" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1858, 315)
+
+[node name="Rock736" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1827, 461)
+
+[node name="Rock737" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1879, 433)
+
+[node name="Rock738" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, 408)
+
+[node name="Rock739" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1904, 365)
+
+[node name="Rock740" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, 323)
+
+[node name="Rock741" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 282)
+
+[node name="Tree151" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1842, 417)
+
+[node name="Rock742" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 384)
+
+[node name="Rock743" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1843, 359)
+
+[node name="Rock744" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1895, 331)
+
+[node name="Rock745" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, 306)
+
+[node name="Tree152" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1888, 373)
+
+[node name="Tree153" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1858, 315)
+
+[node name="Rock746" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1821, 256)
+
+[node name="Rock747" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1835, 215)
+
+[node name="Rock748" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1818, 173)
+
+[node name="Rock749" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, 138)
+
+[node name="Rock750" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1829, 96)
+
+[node name="Rock751" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1829, 264)
+
+[node name="Rock752" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1826, 239)
+
+[node name="Rock753" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, 196)
+
+[node name="Tree154" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1792, 248)
+
+[node name="Rock754" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1797, 275)
+
+[node name="Rock755" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1849, 247)
+
+[node name="Rock756" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, 222)
+
+[node name="Rock757" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, 179)
+
+[node name="Rock758" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1857, 137)
+
+[node name="Rock759" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 96)
+
+[node name="Tree155" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1812, 231)
+
+[node name="Rock760" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1837, 198)
+
+[node name="Rock761" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1813, 173)
+
+[node name="Rock762" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1865, 145)
+
+[node name="Rock763" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1862, 120)
+
+[node name="Tree156" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1858, 187)
+
+[node name="Tree157" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1828, 129)
+
+[node name="Rock764" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1797, 275)
+
+[node name="Rock765" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1849, 247)
+
+[node name="Rock766" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1846, 222)
+
+[node name="Rock767" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, 179)
+
+[node name="Rock768" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1857, 137)
+
+[node name="Rock769" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 96)
+
+[node name="Tree158" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1812, 231)
+
+[node name="Rock770" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1837, 198)
+
+[node name="Rock771" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1813, 173)
+
+[node name="Rock772" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1865, 145)
+
+[node name="Rock773" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1862, 120)
+
+[node name="Tree159" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1858, 187)
+
+[node name="Tree160" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1828, 129)
+
+[node name="Rock774" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1825, 75)
+
+[node name="Rock775" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1793, 86)
+
+[node name="Rock776" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1793, 86)
+
+[node name="Rock777" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1190)
+
+[node name="Rock778" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, 1148)
+
+[node name="Rock779" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, 1113)
+
+[node name="Rock780" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1865, 1071)
+
+[node name="Rock781" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, 1015)
+
+[node name="Rock782" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1856, 973)
+
+[node name="Rock783" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, 930)
+
+[node name="Rock784" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 888)
+
+[node name="Rock785" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1881, 847)
+
+[node name="Rock786" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, 805)
+
+[node name="Rock787" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 776)
+
+[node name="Rock788" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 734)
+
+[node name="Rock789" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 691)
+
+[node name="Rock790" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, 649)
+
+[node name="Rock791" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 608)
+
+[node name="Rock792" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1890, 1171)
+
+[node name="Rock793" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, 1197)
+
+[node name="Rock794" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1910, 1154)
+
+[node name="Rock795" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1893, 1112)
+
+[node name="Rock796" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1907, 1071)
+
+[node name="Tree161" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1848, 1206)
+
+[node name="Rock797" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, 1173)
+
+[node name="Rock798" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1849, 1148)
+
+[node name="Rock799" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 1120)
+
+[node name="Rock800" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1898, 1095)
+
+[node name="Tree162" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1894, 1162)
+
+[node name="Tree163" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1864, 1104)
+
+[node name="Rock801" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, 1197)
+
+[node name="Rock802" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1910, 1154)
+
+[node name="Rock803" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1893, 1112)
+
+[node name="Rock804" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1907, 1071)
+
+[node name="Tree164" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1848, 1206)
+
+[node name="Rock805" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, 1173)
+
+[node name="Rock806" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1849, 1148)
+
+[node name="Rock807" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 1120)
+
+[node name="Rock808" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1898, 1095)
+
+[node name="Tree165" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1894, 1162)
+
+[node name="Tree166" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1864, 1104)
+
+[node name="Rock809" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1857, 1091)
+
+[node name="Rock810" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1050)
+
+[node name="Rock811" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, 1008)
+
+[node name="Rock812" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, 973)
+
+[node name="Rock813" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1865, 931)
+
+[node name="Rock814" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1865, 1099)
+
+[node name="Rock815" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1862, 1074)
+
+[node name="Rock816" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1890, 1031)
+
+[node name="Tree167" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1828, 1083)
+
+[node name="Rock817" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1833, 1110)
+
+[node name="Rock818" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1885, 1082)
+
+[node name="Rock819" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, 1057)
+
+[node name="Rock820" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1910, 1014)
+
+[node name="Rock821" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1893, 972)
+
+[node name="Rock822" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1907, 931)
+
+[node name="Tree168" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1848, 1066)
+
+[node name="Rock823" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, 1033)
+
+[node name="Rock824" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1849, 1008)
+
+[node name="Rock825" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 980)
+
+[node name="Rock826" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1898, 955)
+
+[node name="Tree169" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1894, 1022)
+
+[node name="Tree170" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1864, 964)
+
+[node name="Rock827" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1833, 1110)
+
+[node name="Rock828" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1885, 1082)
+
+[node name="Rock829" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1882, 1057)
+
+[node name="Rock830" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1910, 1014)
+
+[node name="Rock831" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1893, 972)
+
+[node name="Rock832" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1907, 931)
+
+[node name="Tree171" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1848, 1066)
+
+[node name="Rock833" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1873, 1033)
+
+[node name="Rock834" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1849, 1008)
+
+[node name="Rock835" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1901, 980)
+
+[node name="Rock836" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1898, 955)
+
+[node name="Tree172" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1894, 1022)
+
+[node name="Tree173" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1864, 964)
+
+[node name="Rock837" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1861, 951)
+
+[node name="Rock838" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, 910)
+
+[node name="Rock839" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1858, 868)
+
+[node name="Rock840" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, 833)
+
+[node name="Rock841" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, 791)
+
+[node name="Rock842" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, 959)
+
+[node name="Rock843" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1866, 934)
+
+[node name="Rock844" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1894, 891)
+
+[node name="Tree174" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1832, 943)
+
+[node name="Rock845" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1837, 970)
+
+[node name="Rock846" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1889, 942)
+
+[node name="Rock847" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, 917)
+
+[node name="Rock848" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1914, 874)
+
+[node name="Rock849" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 832)
+
+[node name="Rock850" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1911, 791)
+
+[node name="Tree175" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1852, 926)
+
+[node name="Rock851" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1877, 893)
+
+[node name="Rock852" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1853, 868)
+
+[node name="Rock853" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1905, 840)
+
+[node name="Rock854" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1902, 815)
+
+[node name="Tree176" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1898, 882)
+
+[node name="Tree177" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1868, 824)
+
+[node name="Rock855" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1837, 970)
+
+[node name="Rock856" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1889, 942)
+
+[node name="Rock896" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 1306)
+
+[node name="Rock897" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1876, 1258)
+
+[node name="Rock898" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1874, 1206)
+
+[node name="Rock899" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 1165)
+
+[node name="Rock900" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1123)
+
+[node name="Rock901" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, 1077)
+
+[node name="Rock902" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, 1307)
+
+[node name="Rock903" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1852, 1265)
+
+[node name="Rock904" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 1230)
+
+[node name="Rock905" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 1188)
+
+[node name="Rock906" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1132)
+
+[node name="Rock907" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1854, 1090)
+
+[node name="Rock908" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 1288)
+
+[node name="Rock909" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 1314)
+
+[node name="Rock910" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, 1271)
+
+[node name="Rock911" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 1229)
+
+[node name="Rock912" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1905, 1188)
+
+[node name="Tree188" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1846, 1323)
+
+[node name="Rock913" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1290)
+
+[node name="Rock914" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 1265)
+
+[node name="Rock915" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, 1237)
+
+[node name="Rock916" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, 1212)
+
+[node name="Tree189" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1892, 1279)
+
+[node name="Tree190" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1862, 1221)
+
+[node name="Rock917" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 1314)
+
+[node name="Rock918" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, 1271)
+
+[node name="Rock919" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 1229)
+
+[node name="Rock920" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1905, 1188)
+
+[node name="Tree191" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1846, 1323)
+
+[node name="Rock921" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1290)
+
+[node name="Rock922" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 1265)
+
+[node name="Rock923" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, 1237)
+
+[node name="Rock924" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, 1212)
+
+[node name="Tree192" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1892, 1279)
+
+[node name="Tree193" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1862, 1221)
+
+[node name="Rock925" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1855, 1208)
+
+[node name="Rock926" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1869, 1167)
+
+[node name="Rock927" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1852, 1125)
+
+[node name="Rock928" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 1090)
+
+[node name="Rock929" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1863, 1216)
+
+[node name="Rock930" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1860, 1191)
+
+[node name="Rock931" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1888, 1148)
+
+[node name="Tree194" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1826, 1200)
+
+[node name="Rock932" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1831, 1227)
+
+[node name="Rock933" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 1199)
+
+[node name="Rock934" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 1174)
+
+[node name="Rock935" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, 1131)
+
+[node name="Rock936" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 1089)
+
+[node name="Tree195" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1846, 1183)
+
+[node name="Rock937" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1150)
+
+[node name="Rock938" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 1125)
+
+[node name="Rock939" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, 1097)
+
+[node name="Rock940" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, 1072)
+
+[node name="Tree196" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1892, 1139)
+
+[node name="Tree197" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1862, 1081)
+
+[node name="Rock941" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1831, 1227)
+
+[node name="Rock942" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, 1199)
+
+[node name="Rock943" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1880, 1174)
+
+[node name="Rock944" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1908, 1131)
+
+[node name="Rock945" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1891, 1089)
+
+[node name="Tree198" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1846, 1183)
+
+[node name="Rock946" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1871, 1150)
+
+[node name="Rock947" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 1125)
+
+[node name="Rock948" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1899, 1097)
+
+[node name="Rock949" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1896, 1072)
+
+[node name="Tree199" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1892, 1139)
+
+[node name="Tree200" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1862, 1081)
+
+[node name="Rock950" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1859, 1068)
+
+[node name="Rock951" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 1076)
+
+[node name="Rock952" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, 1051)
+
+[node name="Tree201" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1830, 1060)
+
+[node name="Rock953" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1835, 1087)
+
+[node name="Rock954" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, 1059)
+
+[node name="Rock955" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1835, 1087)
+
+[node name="Rock956" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1887, 1059)
+
+[node name="Rock857" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, 917)
+
+[node name="Rock858" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1914, 874)
+
+[node name="Rock859" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1897, 832)
+
+[node name="Rock860" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1911, 791)
+
+[node name="Tree178" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1852, 926)
+
+[node name="Rock861" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1877, 893)
+
+[node name="Rock862" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1853, 868)
+
+[node name="Rock863" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1905, 840)
+
+[node name="Rock864" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1902, 815)
+
+[node name="Tree179" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1898, 882)
+
+[node name="Tree180" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1868, 824)
+
+[node name="Rock865" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1831, 765)
+
+[node name="Rock866" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1845, 724)
+
+[node name="Rock867" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1828, 682)
+
+[node name="Rock868" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1856, 647)
+
+[node name="Rock869" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, 605)
+
+[node name="Rock870" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1839, 773)
+
+[node name="Rock871" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1836, 748)
+
+[node name="Rock872" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1864, 705)
+
+[node name="Tree181" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1802, 757)
+
+[node name="Rock873" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1807, 784)
+
+[node name="Rock874" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1859, 756)
+
+[node name="Rock875" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1856, 731)
+
+[node name="Rock876" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, 688)
+
+[node name="Rock877" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 646)
+
+[node name="Rock878" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1881, 605)
+
+[node name="Tree182" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1822, 740)
+
+[node name="Rock879" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 707)
+
+[node name="Rock880" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1823, 682)
+
+[node name="Rock881" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, 654)
+
+[node name="Rock882" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 629)
+
+[node name="Tree183" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1868, 696)
+
+[node name="Tree184" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1838, 638)
+
+[node name="Rock883" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1807, 784)
+
+[node name="Rock884" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1859, 756)
+
+[node name="Rock885" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1856, 731)
+
+[node name="Rock886" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1884, 688)
+
+[node name="Rock887" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, 646)
+
+[node name="Rock888" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1881, 605)
+
+[node name="Tree185" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1822, 740)
+
+[node name="Rock889" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1847, 707)
+
+[node name="Rock890" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1823, 682)
+
+[node name="Rock891" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1875, 654)
+
+[node name="Rock892" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1872, 629)
+
+[node name="Tree186" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1868, 696)
+
+[node name="Tree187" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1838, 638)
+
+[node name="Rock893" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1835, 584)
+
+[node name="Rock894" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1803, 595)
+
+[node name="Rock895" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1803, 595)
+
+[node name="Rock649" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1870, -597)
+
+[node name="Rock650" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1867, -622)
+
+[node name="Rock651" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1895, -665)
+
+[node name="Rock652" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1878, -707)
+
+[node name="Rock653" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1892, -748)
+
+[node name="Tree131" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1833, -613)
+
+[node name="Rock654" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1858, -646)
+
+[node name="Rock655" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1834, -671)
+
+[node name="Rock656" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1886, -699)
+
+[node name="Rock657" parent="." instance=ExtResource("2_p0hu8")]
+position = Vector2(1883, -724)
+
+[node name="Tree132" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1879, -657)
+
+[node name="Tree133" parent="." instance=ExtResource("3_6ysgq")]
+position = Vector2(1849, -715)
+
+[node name="mob" parent="." instance=ExtResource("4_g6b4n")]
+position = Vector2(342, 173)
+
+[node name="mob4" parent="." instance=ExtResource("4_g6b4n")]
+position = Vector2(476, 204)
+
+[node name="mob3" parent="." instance=ExtResource("4_g6b4n")]
+position = Vector2(291, 254)
+
+[node name="mob2" parent="." instance=ExtResource("4_g6b4n")]
+position = Vector2(564, 131)

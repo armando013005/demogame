@@ -1,14 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcdpiv3siqyj4"]
+[gd_scene load_steps=5 format=3 uid="uid://bcdpiv3siqyj4"]
 
-[ext_resource type="Script" path="res://source/player.gd" id="1_btceq"]
+[ext_resource type="Script" path="res://art/source/player.gd" id="1_btceq"]
 [ext_resource type="PackedScene" uid="uid://b1od0bl7yk277" path="res://one_character.tscn" id="2_xorcf"]
+[ext_resource type="PackedScene" uid="uid://bsvtwv7sf3eui" path="res://gun.tscn" id="3_13iv3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qx84v"]
 radius = 6.0
 height = 16.0
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(127, 69)
+position = Vector2(0, -2)
 script = ExtResource("1_btceq")
 
 [node name="OneCharacter" parent="." instance=ExtResource("2_xorcf")]
@@ -17,3 +18,6 @@ position = Vector2(1, -1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 8)
 shape = SubResource("CapsuleShape2D_qx84v")
+
+[node name="gun" parent="." instance=ExtResource("3_13iv3")]
+position = Vector2(-2, 2)

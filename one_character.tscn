@@ -46,3 +46,6 @@ libraries = {
 "": SubResource("AnimationLibrary_13wvv")
 }
 autoplay = "walk"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
